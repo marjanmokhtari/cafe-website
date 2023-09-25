@@ -1,0 +1,22 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(110, 107, 107);
+}
+a,a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+   
+}

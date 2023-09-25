@@ -1,0 +1,403 @@
+@font-face {
+  font-family: fontbody;
+  src: url(../font/Lato-LightItalic.ttf);
+}
+@font-face {
+  font-family: hgrop;
+  src: url(../font/Lato-Bold.ttf);
+}
+body {
+  font-family: fontbody;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: hgrop;
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+}
+.head > .row nav {
+  height: 100vh;
+  position: fixed;
+  width: 20%;
+  background-color: rgb(40, 43, 47);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.head > .row nav * {
+  width: 100%;
+}
+.head > .row nav figure {
+  width: 100px;
+  display: flex;
+  margin: 50px;
+}
+.head > .row nav figure img {
+  width: 100%;
+  height: 100%;
+}
+.head > .row nav > div ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.head > .row nav > div ul li {
+  position: relative;
+}
+.head > .row nav > div ul li:first-of-type > a {
+  color: rgb(174, 137, 93);
+}
+.head > .row nav > div ul li:hover > .drink {
+  opacity: 1;
+  visibility: visible;
+}
+.head > .row nav > div ul li .drink {
+  transition: 0.6s;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.head > .row nav > div ul li .drink li {
+  width: 200px;
+  background-color: rgb(174, 137, 93);
+  padding: 10px;
+}
+.head > .row nav > div ul li .drink li:hover {
+  background-color: rgb(40, 43, 47);
+  transition: 0.4s;
+}
+.head > .row nav > div ul li .drink li a {
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+}
+.head > .row nav > div ul li .menu1 {
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(74, 73, 73);
+  padding: 25px;
+  text-transform: capitalize;
+  color: white;
+}
+.head > .row nav > div ul li .menu1:hover {
+  color: rgb(174, 137, 93);
+}
+.head > .row nav .soctial {
+  width: 100%;
+  display: flex;
+}
+.head > .row nav .soctial a {
+  transition: 1s;
+  color: white;
+}
+.head > .row nav .soctial a:hover {
+  color: #b38f64;
+}
+.head > .row nav .soctial a i {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.head .photo {
+  width: 90%;
+  height: 100vh;
+  background-image: url(../img/cafe-hero-home.jpg);
+  background-size: cover;
+  margin-left: 10%;
+}
+
+.eating {
+  height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  display: flex;
+  background-color: rgb(49, 53, 57);
+}
+.eating .row div {
+  width: 80%;
+}
+.eating .row div:nth-of-type(1) {
+  margin-top: 80px;
+  width: 65%;
+}
+.eating .row div:nth-of-type(1) * {
+  padding-left: 50px;
+}
+.eating .row div:nth-of-type(1) h1 {
+  font-size: 3vw;
+  color: white;
+}
+.eating .row div:nth-of-type(1) h4 {
+  color: #b38f64;
+  padding: 30px 50px;
+}
+.eating .row div:nth-of-type(1) img {
+  transition: 0.4s;
+}
+.eating .row div:nth-of-type(1) img:hover {
+  transform: translateY(-20px);
+}
+.eating .row div:nth-of-type(1) p {
+  padding-top: 20px;
+  width: 87%;
+  text-align: justify;
+  line-height: 30px;
+  color: rgb(183, 182, 182);
+}
+.eating .row div:nth-of-type(1) div a {
+  transition: 0.4s;
+  width: 200px;
+  padding-left: 0;
+  border: 1px solid white;
+  color: white;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+.eating .row div:nth-of-type(1) div a:hover {
+  background-color: #b38f64;
+  border: none;
+}
+.eating .row div:nth-of-type(2) {
+  width: 35%;
+}
+.eating .row div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.reservation {
+  width: 80%;
+  margin-left: 20%;
+  height: 100vh;
+  background-image: url(../img/parallax-image.jpg);
+  background-size: cover;
+}
+.reservation .row {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+.reservation .row div {
+  color: white;
+}
+.reservation .row div h2 {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  font-size: 3vw;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.reservation .row div h2::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  background-color: #b38f64;
+  bottom: 50px;
+  left: 42%;
+}
+.reservation .row div div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reservation .row div div p {
+  width: 70%;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.reservation .row div a {
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 18px;
+}
+.reservation .row div a:hover {
+  border: none;
+  background-color: #b38f64;
+  transition: 0.4s;
+}
+
+.gallery {
+  width: 80%;
+  height: 100vh;
+  margin-left: 20%;
+}
+.gallery .row .row {
+  width: 100%;
+  height: 60vh;
+}
+.gallery .row .row div {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.gallery .row .row div > * {
+  width: 100%;
+  padding-left: 50px;
+}
+.gallery .row .row div h4 {
+  position: relative;
+  color: #b38f64;
+  font-size: 1.5vw;
+  padding-top: 70px;
+}
+.gallery .row .row div h4::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #b38f64;
+  bottom: -10px;
+  left: 50px;
+  position: absolute;
+}
+.gallery .row .row div p {
+  padding-top: 30px;
+  width: 70%;
+  font-size: 30px;
+}
+.gallery .row .row div a {
+  transition: 0.4s;
+  margin-left: 50px;
+  margin-top: 100px;
+  padding-left: 0;
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.gallery .row .row div a:hover {
+  background-color: rgba(255, 255, 255, 0.246);
+}
+.gallery .row .row div:first-of-type {
+  background-color: rgb(36, 41, 45);
+}
+.gallery .row .row div:last-of-type {
+  background-color: rgb(49, 53, 57);
+}
+.gallery .photo {
+  width: 100%;
+  height: 40vh;
+}
+.gallery .photo .row {
+  width: 100%;
+  height: 100%;
+}
+.gallery .photo .row figure {
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  height: 100%;
+}
+.gallery .photo .row figure:hover > img {
+  width: 110%;
+}
+.gallery .photo .row figure:hover::after {
+  opacity: 1;
+}
+.gallery .photo .row figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.339);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.8s;
+}
+.gallery .photo .row figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s;
+}
+
+footer {
+  width: 80%;
+  margin-left: 20%;
+  height: 70vh;
+  background-color: rgb(49, 53, 57);
+}
+footer .row {
+  width: 100%;
+}
+footer .row .box-icons {
+  width: 100%;
+  font-size: 50px;
+  color: #b38f64;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+footer .row .box-icons::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.544);
+  position: absolute;
+}
+footer .row .box-icons::before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.544);
+  position: absolute;
+  bottom: 0;
+}
+footer .row .box-icons > a {
+  margin: 20px;
+}
+footer .row .box-icons > a:hover > i {
+  color: white;
+}
+footer .row .box-icons > a i {
+  transition: 0.4s;
+}
+footer .profile {
+  width: 100%;
+}
+footer .profile .row {
+  align-items: center;
+  justify-content: left;
+}
+footer .profile .row figure {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+}
+footer .profile .row figure img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+footer .profile .row div {
+  width: 50%;
+  height: 100%;
+}
+footer .profile .row div a {
+  color: white;
+  padding-left: 20px;
+  display: flex;
+  font-size: 1.5vw;
+}/*# sourceMappingURL=master.css.map */
