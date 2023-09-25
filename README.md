@@ -4,8 +4,6 @@
 
 🐞- Developed by marjan mokhtari 
 
-📅- Created - 2022-9-24
-
 🪐- Technologies Used - Html , Css , Sass
 
 👩‍💻- Role - Frontend
